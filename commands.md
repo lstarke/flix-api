@@ -11,4 +11,5 @@ python manage.py makemigrations
 python manage.py migrate
 pip install djangorestframework
 add rest_framework inside app/settings.py/INSTALLED_APPS
+pip install djangorestframework-simplejwt
 
