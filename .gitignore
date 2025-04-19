@@ -1,0 +1,64 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+*.mo
+*.pot
+
+# If your Django project has a media folder for uploaded files
+/media/
+/staticfiles/
+/static/
+
+# Django migration files
+**/migrations/*.py
+!**/migrations/__init__.py
+
+# Environment variables
+.env
+.env.*
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+
+# Pytest
+.pytest_cache/
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Node modules (if you use npm/yarn for frontend)
+node_modules/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
