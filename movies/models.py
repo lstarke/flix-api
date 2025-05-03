@@ -2,6 +2,7 @@ from django.db import models
 from genres.models import Genre
 from actors.models import Actor
 
+
 class Movie(models.Model):
     title = models.CharField(max_length=200)
     genre = models.ForeignKey(

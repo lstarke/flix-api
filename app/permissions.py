@@ -1,5 +1,6 @@
 from rest_framework import permissions
 
+
 class GlobalDefaultPermission(permissions.BasePermission):
 
     def has_permission(self, request, view):
@@ -12,7 +13,7 @@ class GlobalDefaultPermission(permissions.BasePermission):
             return False
 
         return request.user.has_perm(model_permission_codename)
-    
+
     def __get_permission(self, method):
         method_actions = {
             'GET': 'view',
@@ -24,7 +25,7 @@ class GlobalDefaultPermission(permissions.BasePermission):
             'HEAD': 'view',
         }
         return method_actions.get(method, '')
-    
+
     def __build_permission_codename(self, method, view):
         try:
             app_name = view.queryset.model._meta.app_label
